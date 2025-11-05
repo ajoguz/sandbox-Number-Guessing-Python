@@ -1,6 +1,6 @@
 import random
 
-n = random.randint(1, 100)
+n = random.randint(0, 50)
 count = 1
 guess_chances = 10
 player_name = input("Hey, What's ur name? ")
@@ -13,7 +13,7 @@ answer = answer.lower()
 if answer in no_words:
   print('oh okay, maybe next time')
 elif answer in yes_words:
-  print('Alright ' + player_name + ' I am thinking about a number between 1 and 100 and you have 10 chances to guess it ;D')
+  print('Alright ' + player_name + ' I am thinking about a number between 0 and 50 and you have 10 chances to guess it ;D')
   print('Lets get started')
   while 1 <= guess_chances:
     num = int(eval(input("Guess the number " )))
